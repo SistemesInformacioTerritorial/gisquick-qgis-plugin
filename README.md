@@ -2,7 +2,7 @@
 
 ## Instal.lacio plugin
 0. Desinstalar plugin oficial, si s'escau
-1. Descarregar dbhash-plugin.zip
+1. Descarregar gisquick_dbhash.zip
 2. Instal·lar el plugin com a ZIP
 
 
