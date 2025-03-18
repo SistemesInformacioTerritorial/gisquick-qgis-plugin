@@ -317,7 +317,8 @@ func (c *Client) handleUploadFiles(msg message) error {
 			errChan <- writer.Close()
 		}()
 
-		url := fmt.Sprintf("%s/api/project/upload/%s", c.Server, params.Project)
+		project := filepath.ToSlash(params.Project)
+		url := fmt.Sprintf("%s/api/project/upload/%s", c.Server, project)
 		req, _ := http.NewRequest("POST", url, readBody)
 		req.Header.Set("Content-Type", writer.FormDataContentType())
 
