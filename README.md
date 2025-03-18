@@ -9,14 +9,14 @@
 
 ## Development
 
-### Build plugin's library
+Per compilar la versió cal tenir el gcc instal.lat en Windows i compilar executant build.bat que es troba al directori go
 
-```
 cd go
-go build -ldflags="-s -w" -buildmode=c-shared -o ../python/gisquick.so cmd/main.go
-```
+build.bat ---- > gisquick-client.dll
 
-### Plugin development (Linux):
-```
-ln -s `pwd`/python ~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/gisquick
-```
+
+
+
+
+
+
